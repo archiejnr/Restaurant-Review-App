@@ -273,3 +273,28 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+/**********All things responsive***************/
+@media only screen and (max-width:770px){
+
+	.inside #map-container {
+    background: blue none repeat scroll 0 0;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    width: 100%;
+}
+#restaurant-container, #reviews-container {
+    border-bottom: 1px solid #d9d9d9;
+    border-top: 1px solid #fff;
+    padding: 140px 40px 30px;
+    width: 100%;
+		position:relative;
+		top:480px;
+}
+.inside #footer {
+    position: relative;
+		top:480px;
+    width: 100%;
+}
+}
