@@ -281,7 +281,7 @@ nav h1 a {
     height: 400px;
     position: absolute;
     right: 0;
-    top: 80px;
+    top: 100px;
     width: 100vw;
 }
 #restaurant-container, #reviews-container {
@@ -290,7 +290,7 @@ nav h1 a {
     padding: 140px 40px 30px;
     width: 100vw;
 		position:relative;
-		top:480px;
+		top:500px;
 		padding: 7.5px;
 }
 .inside #footer {
@@ -298,6 +298,7 @@ nav h1 a {
 		top:480px;
     width: 100vw;
 		padding-left: 0px;
+		font-size:10px;
 }
 .inside #maincontent {
     background-color: #f3f3f3;
