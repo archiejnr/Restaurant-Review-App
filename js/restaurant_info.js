@@ -22,7 +22,7 @@ initMap = () => {
         scrollWheelZoom: false
       });
       L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.jpg70?access_token={mapboxToken}', {
-        mapboxToken: '<your MAPBOX API KEY HERE>',
+        mapboxToken:'pk.eyJ1IjoiYXJjaGJvbGQiLCJhIjoiY2pqdnhhanRxOTFybjNyczIzOGIzYnoyaiJ9.8WkaLTP6I-LFImfq5GsnRQ',
         maxZoom: 18,
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
           '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
@@ -191,20 +191,4 @@ getParameterByName = (name, url) => {
   if (!results[2])
     return '';
   return decodeURIComponent(results[2].replace(/\+/g, ' '));
-}
-
-
-
-
-/**************************service worker registration*********************/
-
-if('serviceWorker' in navigator){
-  navigator.serviceWorker
-    .register('js/service-worker.js')
-      .then(function(reg){
-        console.log('service worker registered',reg);
-      })
-        .catch(function(err){
-          console.log('service worker couldnt be registered',err);
-        });
 }
