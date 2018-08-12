@@ -276,19 +276,27 @@ nav h1 a {
   color: #666;
 }
 /**********All things responsive***************/
+ul{
+	display: flex;
+	flex-wrap: wrap;
+	text-align:center;
+	padding:0;
+	margin:0;
+}
+
 @media only screen and (max-width:770px){
 	.filter-options{
-	display:flex;
-	flex-wrap:wrap;
+	display: flex;
+	flex-wrap: wrap;
 	}
 	#neighborhoods-select{
-		width:45%;
+		width: 45%;
 	}
 	#cuisines-select{
-		width:45%;
+		width: 45%;
 	}
 	#nyari{
-		width:100%;
+		width: 100%;
 	}
 	.inside #map-container {
     background: blue none repeat scroll 0 0;
@@ -297,61 +305,55 @@ nav h1 a {
     right: 0;
     top: 100px;
     width: 100vw;
-		z-index:900;
-}
-#restaurant-container, #reviews-container {
+		z-index: 900;
+	}
+	#restaurant-container, #reviews-container {
     border-bottom: 1px solid #d9d9d9;
     border-top: 1px solid #fff;
     padding: 140px 40px 30px;
     width: 100vw;
-		position:relative;
-		top:500px;
+		position: relative;
+		top: 500px;
 		padding: 7.5px;
-}
-.inside #footer {
+	}
+	.inside #footer {
     position: relative;
-		top:480px;
+		top: 480px;
     width: 100%;
 		padding-left: 0px;
-		font-size:10px;
-}
-.inside #maincontent {
+		font-size: 10px;
+	}
+	.inside #maincontent {
     background-color: #f3f3f3;
     min-height: 100%;
-		width:100%;
-}
-.inside{
-	width:100vw;
-}
-.inside header {
+		width: 100%;
+	}
+	.inside{
+	width: 100vw;
+	}
+	.inside header {
     position: fixed;
     top: 0;
     width: 100vw;
     z-index: 1000;
-}
-html, body {
+	}
+	html,
+	body {
     max-width: 100vw;
     overflow-x: hidden;
-}
-.leaflet-left {
+	}
+	.leaflet-left {
     left: 80vw;
-}
-#breadcrumb {
+	}
+	#breadcrumb {
     padding: 0px 0px 0px;
     list-style: none;
     background-color: #eee;
     font-size: 17px;
     margin: 0;
 		width: 100%;
-}
-::-webkit-scrollbar {
-display: none;
-}
-}
-ul{
-display:flex;
-flex-wrap:wrap;
-text-align:center;
-padding:0;
-margin:0;
+	}
+	::-webkit-scrollbar {
+	display: none;
+	}
 }
