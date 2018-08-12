@@ -277,7 +277,19 @@ nav h1 a {
 }
 /**********All things responsive***************/
 @media only screen and (max-width:770px){
-
+	.filter-options{
+	display:flex;
+	flex-wrap:wrap;
+	}
+	#neighborhoods-select{
+		width:45%;
+	}
+	#cuisines-select{
+		width:45%;
+	}
+	#nyari{
+		width:100%;
+	}
 	.inside #map-container {
     background: blue none repeat scroll 0 0;
     height: 400px;
@@ -336,16 +348,10 @@ html, body {
 display: none;
 }
 }
-
-
 ul{
 display:flex;
 flex-wrap:wrap;
 text-align:center;
 padding:0;
 margin:0;
-}
-
-li{
-
 }
